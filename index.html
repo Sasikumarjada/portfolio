@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasikumar Jada - Portfolio</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #4CAF50, #81C784);
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFD700;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header Section */
+    header {
+      background: #388E3C;
+      padding: 50px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin: 10px 0 20px;
+    }
+
+    header .social-links a {
+      display: inline-block;
+      margin: 0 15px;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    header .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    /* About Section */
+    .about {
+      margin: 50px 0;
+      padding: 20px;
+      background: #43A047;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    /* Skills Section */
+    .skills {
+      margin: 50px 0;
+      padding: 20px;
+      background: #66BB6A;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    .skills ul li {
+      margin: 10px 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    /* Projects Section */
+    .projects {
+      margin: 50px 0;
+      padding: 20px;
+      background: #81C784;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .projects .project {
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    .projects .project h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .projects .project p {
+      margin: 5px 0;
+    }
+
+    .projects .project a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #FFD700;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .projects .project a:hover {
+      background: #FFC107;
+    }
+
+    /* Certifications Section */
+    .certifications {
+      margin: 50px 0;
+      padding: 20px;
+      background: #66BB6A;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .certifications h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .certifications ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+
+    .certifications ul li {
+      margin: 10px 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    /* Contact Section */
+    .contact {
+      margin: 50px 0;
+      padding: 20px;
+      background: #388E3C;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact form input, .contact form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .contact form button {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact form button:hover {
+      background: #FFC107;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #2E7D32;
+      color: #fff;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sasikumar Jada</h1>
+    <p>Full-Stack Developer | Machine Learning Enthusiast</p>
+    <div class="social-links">
+      <a href="https://github.com/Sasikumarjada" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/SasikumarJada" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Aspiring developer with experience in web development, programming, and database management. Passionate about creating innovative solutions using cutting-edge technologies and continuously learning new skills in the tech domain.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Front-End Development: HTML, CSS, JavaScript</li>
+        <li>Programming Languages: Python (primary), Basic Java</li>
+        <li>Database Management: MySQL</li>
+        <li>Machine Learning & Deep Learning: Classification & Regression Models</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>GitHub Portfolio</h3>
+        <p>A repository of projects showcasing web development, programming, and machine learning skills.</p>
+        <a href="https://github.com/Sasikumarjada" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Registration Form</h3>
+        <p>Designed and developed a registration form with validation and user-friendly UI.</p>
+        <a href="https://github.com/Sasikumarjada" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Great Learning: Certified Machine Learning Developer (2024)</li>
+        <li>NPTEL: Certified Internet of Things (IoT) Course</li>
+        <li>Quality Thought: Completed 3-month Internship</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sasikumar Jada. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
